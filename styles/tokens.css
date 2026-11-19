@@ -1,0 +1,30 @@
+/* Design tokens. Every variable inside @theme becomes a Tailwind utility.
+
+/* Fonts: these point at next/font variables (see app/fonts.ts), so they use @theme inline. */
+@theme inline {
+  /* font */
+  --font-display: var(--font-anton);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+@theme {
+  /* colour */
+  --color-paper: #f4f4f2;
+  --color-ink: #111111;
+  --color-muted: #6B6B6B;
+  --color-muted-on-dark: #A3A3A3;
+  --color-line: #E0E0E0;
+  --color-accent: #FFD43B;
+  /* type scale */
+  --text-display: clamp(3.5rem, 12vw, 10rem);
+  --text-display--line-height: 0.9;
+  --text-title: clamp(2.5rem, 6vw, 4.5rem);
+  --text-title--line-height: 0.95;
+  --text-label: 0.75rem;
+  --text-label--letter-spacing: 0.12em;
+  /* layout and spacing */
+  --container-page: 1280px;
+  --spacing-gutter: clamp(1rem, 4vw, 1.5rem); /* 16px on mobile, grows toward 24px MAX */
+  --spacing-section: clamp(4rem, 10vw, 10rem); /* 64px on mobile, grows toward 160px MAX */
+}
