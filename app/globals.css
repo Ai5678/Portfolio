@@ -6,6 +6,7 @@ body {
   background: var(--color-paper);
   color: var(--color-ink);
   font-family: var(--font-sans);
+  line-height: 1.6;
 }
 
 /* One focus style for every interactive element.
